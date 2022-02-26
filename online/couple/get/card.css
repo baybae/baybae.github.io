@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: #feeaec;
+}
+
+.couplecewek {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 180;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+   min-height: 100%;
+}
+
+.couplecowok {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -400;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+   min-height: 100%;
+}
+
+.profileCard {
+  height: 30rem;
+  width: 20rem;
+  position: relative;
+  transition: all ease 0.5s;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px rgba(34, 24, 28, 0.5);
+  overflow: hidden;
+}
+.profileCard .profileHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 22.7rem;
+  overflow: hidden;
+  z-index: 1;
+  transition: all ease 0.5s;
+}
+.profileCard .profileHeader img {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.profileCard .profileHeader .info {
+  position: absolute;
+  z-index: 2;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.profileCard .profileHeader .info .name {
+  font-size: 3rem;
+  margin: 0.5rem auto;
+}
+.profileCard .profileHeader .info .designation {
+  font-size: 1.5rem;
+}
+.profileCard .profileHeader::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(34, 24, 28, 0.6), rgba(244, 91, 105, 0.6));
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all ease 0.5s;
+}
+.profileCard .profileBody {
+  margin-top: 10.5rem;
+  padding: 0.5rem;
+  text-align: justify;
+}
+.profileCard .profileBody .icons {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.profileCard .profileBody .icons a {
+  font-size: 2rem;
+  color: #22181C;
+}
+.profileCard .profileBody .icons a:hover {
+  color: #F45B69;
+}
+.profileCard .profileFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 1rem 2rem;
+  transition: all ease 0.5s;
+  color: #22181C;
+}
+.profileCard .profileFooter .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+.profileCard .profileFooter .block .subInfo {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+.profileCard .profileFooter .block .count {
+  font-size: 1.2rem;
+}
+.profileCard .share {
+  position: absolute;
+  top: -0.8rem;
+  right: 1.5rem;
+  z-index: 10;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 400px;
+  font-size: 1rem;
+  border: none;
+  background-color: #22181C;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  outline: 0;
+  transition: all ease 0.5s;
+}
+.profileCard .share .fa-close {
+  display: none;
+}
+.profileCard .share:hover {
+  cursor: pointer;
+  background-color: #040303;
+}
+
+.profileCard.open .profileHeader {
+  height: 10rem;
+}
+.profileCard.open .profileFooter {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+.profileCard.open .profileFooter .share {
+  right: 0.5rem;
+  top: -0.8rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  transform: rotate(90deg);
+}
+.profileCard.open .profileFooter .share .fa-share-alt {
+  display: none;
+}
+.profileCard.open .profileFooter .share .fa-close {
+  display: inline-block;
+}
+
+/*
+https://www.maxpixel.net/static/photo/1x/Children-Childrens-Oriental-Man-Baby-Boy-Profile-2081553.jpg
+*/

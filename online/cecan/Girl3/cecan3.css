@@ -1,0 +1,10 @@
+
+
+.pinterest-feed-pin a img{
+  transition: all ease 0.1s;
+}
+
+.pinterest-feed-pin a:hover img{
+  transform:scale(1.2);
+  opacity:0.6;
+}

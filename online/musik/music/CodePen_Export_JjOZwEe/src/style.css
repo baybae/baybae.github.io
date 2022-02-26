@@ -1,0 +1,27 @@
+.pinterest-feed-container{  
+font-size:0px;  
+margin:10px 0px; 
+height:auto;
+padding:20px 15px 20px 20px; 
+}
+
+.pinterest-feed-pin{
+  width:20%;
+}
+
+.pinterest-feed-pin a{
+  display:block;
+  margin:5px;
+  border:1px solid #eeeeee; 
+  overflow:hidden;
+}
+
+.pinterest-feed-pin a img{
+  transition: all ease 0.1s;
+}
+
+.pinterest-feed-pin a:hover img{
+  transform:scale(1.2);
+  opacity:0.6;
+}
+

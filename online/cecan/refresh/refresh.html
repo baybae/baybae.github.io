@@ -1,0 +1,29 @@
+<html>
+
+
+<head>
+    <script type="text/javascript">
+
+        //get size of window using window.innerWidth and make the link array according to the value
+        // Create an array of the links to choose from:
+        function openLink() {
+            var links = new Array();
+            links[0] = "Girl/cecan.html";
+            links[1] = "Girl1/cecan1.html";
+            links[2] = "Girl2/cecan2.html";
+            links[3] = "Girl3/cecan3.html";
+           
+            // Chooses a random link:
+            var i = Math.floor(Math.random() * links.length);
+            // Directs the browser to the chosen target:
+            window.location.href = links[i];
+        }
+
+    </script>
+
+</head>
+
+<body onload="openLink()"></body>
+
+</html>
+

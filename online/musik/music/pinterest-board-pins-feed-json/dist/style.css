@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+#mainContainer,
+#pinterest {
+  padding: 20px;
+}
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+
+.pic {
+  float: left;
+  width: ;
+  padding-top: ;
+  margin: 0.5%;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .pic {
+    width: 19%;
+    padding-top: 19%;
+  }
+}

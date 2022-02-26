@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #333333;
+    font-family: "Helvetica";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+	position: absolute;
+  bottom: -55px;
+  left: 60px;
+  color: #888;
+  font-size: 19px;
+    padding-top: 10px;
+  text-shadow: 1px 1px 0px #111;
+  
+
+}
+
+.typed {
+  border-bottom: 2px solid #ffffff;
+}
+
+.typed-cursor{
+   opacity: 1;
+   animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+

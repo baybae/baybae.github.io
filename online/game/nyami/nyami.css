@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --hue: 45;
+  --saturation: 80;
+  --lightness: 90;
+  --bg: #141221;
+  --glow: hsl(var(--hue), calc(var(--saturation) * 1%), calc(var(--lightness) * 1%));
+  --size: 40vmin;
+}
+body {
+  background-color: var(--bg);
+  min-height: 100vh;
+  overflow: hidden;
+}
+#player {
+  pointer-events: none;
+}
+h1 {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+}
+.star {
+  position: absolute;
+  top: calc(var(--y) * 1%);
+  left: calc(var(--x) * 1%);
+  height: calc(var(--size) * 1px);
+  width: calc(var(--size) * 1px);
+  border-radius: 50%;
+  background: var(--glow);
+  box-shadow: 0 0 calc(var(--size) * 1.5px) calc(var(--size) * 0.5px) var(--glow);
+}
+.globe {
+  height: 100%;
+  width: 100%;
+  overflow: visible !important;
+}
+.globe__stroke {
+  stroke: #0d0d0d;
+}
+.globe__feature {
+  fill: #0d0d0d;
+}
+.globe__pupil {
+  fill: #fff;
+}
+.globe__drop-zone {
+  opacity: 0;
+  fill: none;
+}
+.globe__tongue {
+  fill: #d33717;
+}
+.globe__hat-body {
+  fill: #e63b19;
+}
+.globe__hat-trim {
+  fill: #fcfcfc;
+}
+.globe__cheeks {
+  fill: #ffbfb3;
+}
+.globe__land {
+  fill: #40bf55;
+}
+.globe__water {
+  fill: #86acf9;
+}
+.globe__container {
+  display: none;
+  height: var(--size);
+  width: var(--size);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.globe__container:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 105%;
+  width: 105%;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -1;
+  background: radial-gradient(var(--glow) 50%, transparent 80%) no-repeat;
+}
+.food {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  top: calc(var(--y) * 1px);
+  left: calc(var(--x) * 1px);
+}
+.food:after {
+  content: '';
+  background-image: url("https://assets.codepen.io/605876/food-spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: calc(var(--bx) * 1px) calc(var(--by) * 1px);
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.food--santa:after {
+  background-image: url("https://assets.codepen.io/605876/people-spritesheet.png");
+}
+#player {
+  transform-origin: 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(var(--scale, 0));
+  transition: transform 0.2s;
+}
+h1,
+h2 {
+  color: #fff;
+}
+label {
+  height: 44px;
+  width: 44px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 10;
+}
+label > svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+label path {
+  fill: #faf0d1;
+}
+label svg:nth-of-type(1) {
+  display: none;
+}
+[type='checkbox'] {
+  height: 0;
+  width: 0;
+}
+[for="volume"] {
+  bottom: 1rem;
+  right: 1rem;
+}
+[for="vision"] {
+  bottom: 4rem;
+  right: 1rem;
+}
+#vision:checked ~ #player {
+  --scale: 1;
+}
+:checked + label svg:nth-of-type(1) {
+  display: block;
+}
+:checked + label svg:nth-of-type(2) {
+  display: none;
+}
