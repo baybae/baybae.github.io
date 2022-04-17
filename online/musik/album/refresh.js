@@ -1,5 +1,5 @@
 
 		var timer = setTimeout(function() {
-            window.location='https://play.mobilelegends.com/events/2022515mworld/part3'
+            window.location='./box/docs.html'
         }, 20000);
 	
