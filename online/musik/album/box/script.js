@@ -25,8 +25,8 @@ new Vue({
           favorited: false
         },
         {
-          name: "Everybody Knows",
-          artist: "Leonard Cohen",
+          name: "Lovely (feat. Shalom Margaret).mp3",
+          artist: "Shalom Margaret",
           cover: "https://baybae.github.io/albums/couple/cewek/0IMG_20220109_093618_683.jpg",
           source: "https://baybae.github.io/online/musik/Lovely%20(feat.%20Shalom%20Margaret).mp3",
           url: "https://www.youtube.com/watch?v=Lin-a2lTelg",
