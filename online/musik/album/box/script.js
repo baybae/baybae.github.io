@@ -28,7 +28,7 @@ new Vue({
           name: "Everybody Knows",
           artist: "Leonard Cohen",
           cover: "https://baybae.github.io/albums/couple/cewek/0IMG_20220109_093618_683.jpg",
-          source: "https://baybae.github.io/online/musik/Billie%20Eilish%20-%20party%20favor%20(Gustixa%20Remix).mp3",
+          source: "https://baybae.github.io/online/musik/Lovely%20(feat.%20Shalom%20Margaret).mp3",
           url: "https://www.youtube.com/watch?v=Lin-a2lTelg",
           favorited: true
         },
