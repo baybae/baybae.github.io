@@ -10,7 +10,7 @@ https://api.pinterest.com/v3/pidgets/boards/victorsalme/stairs/pins/
 var pinUser = 'baybae_';
 
 // Number of Pins you wish to display
-var numPins = '70';
+var numPins = '50';
 
 // ----------------------------------
 
